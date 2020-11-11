@@ -4,9 +4,9 @@ import "./../styles/App.css";
 function App() {
   const { isParaShow, setState } = useState(false);
 
-  handleClick = () => {
+  function handleClick() {
     setState((isParaShow = true));
-  };
+  }
   return (
     <div id="main">
       <button id="click" onClick={handleClick}>
